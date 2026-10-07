@@ -183,3 +183,13 @@ $('#demo').onclick=async()=>{const bt=$('#demo');if(demoOn){demoOn=false;bt.text
 for(let k=0;k<tools.length&&demoOn;k++){const s=openTool(k);await sleep(500);if(!demoOn)break;await s();await sleep(3500)}demoOn=false;bt.textContent='Run demo'};
 openTool(0)();
 </script></body></html>
+<style>
+.cr{max-width:1148px;padding:8px clamp(16px,4vw,48px) 40px;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;justify-content:space-between;color:var(--mut);font-size:13px}
+.cr b{font:800 16px/1.2 'Bricolage Grotesque',system-ui,sans-serif;color:var(--ink);letter-spacing:.01em}
+.cr b em{font-style:normal;color:var(--acc)}
+.cr code{font:12px ui-monospace,Menlo,Consolas,monospace}
+.cr a{color:var(--ink);text-decoration:none;border:1px solid var(--ln);padding:7px 14px;border-radius:999px;transition:border-color .2s,color .2s}
+.cr a:hover{border-color:var(--acc);color:var(--acc)}
+.cr a:focus-visible{outline:2px solid var(--acc)}
+</style>
+<footer class="cr"><span><b>crafted by <em>Pr4733k</em></b><br><code>// built to keep you safe, one tool at a time</code></span><a href="https://www.instagram.com/prateek_raikwar_/" target="_blank" rel="noopener">@prateek_raikwar_ ↗</a></footer>
